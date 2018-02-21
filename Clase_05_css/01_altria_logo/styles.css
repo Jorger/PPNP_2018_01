@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    margin: auto;
+    position:relative;
+}
+
+.base_logo {
+    width: 500px;
+    height: 300px;
+}
+
+.base_logo_symbol {
+    display: inline-block;
+    width: 55%;
+}
+
+.base_logo_name {
+    vertical-align:top;
+    display: inline-block;
+    width: 30%;
+    height: 250px;
+    color: #46567d;
+    font-size: 10em;
+    padding-top: 10%;
+}
+
+/* Ejemplo prefijos */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.square {
+    margin-right: -4px;
+    margin-top: -4px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+.color_0_0 {
+    background: #015781;
+}
+
+.color_0_1 {
+    background: #007ec7;
+}
+
+.color_0_2 {
+    background: #f2a62d;
+}
+
+.color_0_3 {
+    background: #c7312d;
+}
+
+.color_0_4 {
+    background: #a13229;
+}
+
+
+.color_1_0 {
+    background: #007EC3;
+}
+
+.color_1_1 {
+    background: #3dc8f4;
+}
+
+.color_1_2 {
+    background: #ef8132;
+}
+
+.color_1_3 {
+    background: #ec2d2f;
+}
+
+.color_1_4 {
+    background: #c7312d;
+}
+
+.color_2_0 {
+    background: #00b8dc
+}
+
+.color_2_1 {
+    background: #01a6b7;
+}
+
+.color_2_2 {
+    background: #f8cd82;
+}
+
+.color_2_3 {
+    background: #f4a880;
+}
+
+.color_2_4 {
+    background: #ec2e30;
+}
+
+.color_3_0 {
+    background: #71c044;
+}
+
+.color_3_1 {
+    background: #d6e033;
+}
+
+.color_3_2 {
+    background: #faf1ac;
+}
+
+.color_3_3 {
+    background: #f8cc82;
+}
+
+.color_3_4 {
+    background: #d1cb83;
+}
+
+.color_4_0 {
+    background: #00a94f;
+}
+
+.color_4_1 {
+    background: #70c044;
+}
+
+.color_4_2 {
+    background: #d6df31;
+}
+
+.color_4_3 {
+    background: #cfcb83;
+}
+
+.color_4_4 {
+    background: #f9f1ae;
+}

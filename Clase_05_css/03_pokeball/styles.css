@@ -1,0 +1,65 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: coral;
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 50%;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.ball {
+    /* border: 3px solid black; */
+    border-radius: 50%; /* arriba, derecha, abajo, izquierda*/
+    height: 400px;
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
+
+.ball--color {    
+  background: linear-gradient(
+      0deg, 
+      white, 
+      white 
+      49%, 
+      black 45%, 
+      black 55%, 
+      red 51% 
+    ); 
+  border-radius: 50%;
+  box-shadow: 3px 2px 19px 0px black;
+}
+
+.ball--black {
+    background: black;
+    height: 180px;
+    width: 180px;
+}
+
+.ball--white {
+    width: 120px;
+    background: white;
+    height: 120px;
+    
+}
+
+.ball__button {
+    height: 70px;
+    width: 70px;
+    box-shadow: 1px 0px 2px 0px black inset;
+}
