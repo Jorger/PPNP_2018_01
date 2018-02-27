@@ -1,0 +1,18 @@
+@font-face{
+	font-family: 'unisabana';
+	src: url('fonts/AlexBrush-Regular-OTF.otf'); 
+	/*OTF*/
+	/*ttf*/
+	/*eot*/
+	/*svg*/
+	/*woff*/
+}
+
+
+body {
+	font-family: 'unisabana', 'Verdana', cursive;
+}
+
+p {
+	font-size: 3em;
+}

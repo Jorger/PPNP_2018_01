@@ -1,0 +1,106 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: linear-gradient(284deg, #586965, #99be58, #be5858);
+	background-size: 600% 600%;
+	animation: fondoAnimado 5s ease infinite;
+	color: white;
+	font-family: Arial;
+}
+
+header {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-family: cursive;
+}
+
+#contenedor {
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	padding-top: 30px;
+	margin-top: 10px;
+	background-color: rgba(101, 139, 122, 0.91);
+	border-radius: 50%;
+	border: 4px solid white;
+	box-shadow: inset 0 0 10px black;
+	background-image: url("../img/protoboard.png");
+}
+
+#led {
+	position: relative;
+	width: 100px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50px 50px 0 0;
+	background-color: rgba(255, 0, 0, 0.6);
+	cursor: pointer;
+	box-shadow: 20px -5px 3px 5px rgba(0, 0, 0, 0.38);
+}
+
+#luz {
+	width: 40px;
+	height: 50px;
+	background-color: rgba(151, 1, 1, 0.96);
+	position: absolute;
+	bottom: 5px;
+	left: 30px;
+}
+
+#line {
+    width: 30px;
+    height: 40px;
+    border-bottom: 4px solid rgba(255, 0, 0, 0.83);
+    transform:
+        translateY(-20px)
+        translateX(5px)
+        rotate(50deg);
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+}
+
+
+#filamento {
+	width: 20px;
+	height: 30px;
+	background-color: rgba(255, 0, 0, 0.83);
+	position: absolute;
+	bottom: 5px;
+	left: 45px;
+}
+
+
+#led:hover {
+	background: rgba(248,80,50,1);
+	background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+	box-shadow: 20px -5px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+#base {
+	margin: 0 auto;
+	width: 150px;
+	height: 50px;
+	background-color: rgba(255, 0, 0, 0.98);
+	box-shadow: 20px 5px 3px 5px rgba(0, 0, 0, 0.55);
+	border-radius: 10px;
+
+}
+
+#patas {
+	width: 35px;
+	height: 250px;
+	margin: 0 auto;
+	border-left: 10px solid gray;
+	border-right: 10px solid gray;
+}
+
+@keyframes fondoAnimado { 
+    0%{background-position:0% 58%}
+    50%{background-position:100% 43%}
+    100%{background-position:0% 58%}
+}
