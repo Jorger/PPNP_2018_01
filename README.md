@@ -30,10 +30,11 @@ Repositorio de la asigantura programación para no programadores.
 * Encuentro sincrónico: https://goo.gl/3krza4
 
 ### Autor
-Jorge Rubaino [@ostjh]
-License
+* Jorge Rubaino [@ostjh]
 
+License
 ----
 MIT
 
 [@ostjh]:https://twitter.com/ostjh
+
