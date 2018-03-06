@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    background: rgba(241,231,103,1);
+    background: radial-gradient(ellipse at center, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+:root {
+    --color_red : #802828;
+    --color_white: #ffffff;
+    --color_blue: #105883;
+    --width_circle : 800px;
+    --height_circle : 800px;
+}
+
+.container {
+    margin: auto;
+    position:relative;
+}
+
+.circle {
+    border-radius: 50%;
+    background: var(--color_red);
+    width: var(--width_circle);
+    height: var(--height_circle);
+}
+
+.circle__white {
+    --width_white: calc(var(--width_circle) * 0.8);
+    --height_white: calc(var(--height_circle) * 0.8);
+    --left_white : calc(var(--height_circle) * 0.1);
+    --top_white : calc(var(--height_circle) * 0.1);
+}
+
+.circle__white {
+    position: absolute;
+    background: var(--color_white);
+    width: var(--width_white);
+    height: var(--height_white);
+    left: var(--left_white);
+    top: var(--top_white);
+}
+
+.circle__red {
+    --width_red: calc(var(--width_white) * 0.75);
+    --height_red: calc(var(--height_white) * 0.75);
+    --left_red : calc(var(--height_white) * 0.13);
+    --top_red : calc(var(--height_white) * 0.13);
+}
+
+.circle__red {
+    position: absolute;
+    background: var(--color_red);
+    width: var(--width_red);
+    height: var(--height_red);
+    left: var(--left_red);
+    top: var(--top_red);
+}
+
+.circle__blue {
+    --width_blue: calc(var(--width_red) * 0.8);
+    --height_blue: calc(var(--height_red) * 0.8);
+    --left_blue : calc(var(--height_red) * 0.1);
+    --top_blue : calc(var(--height_red) * 0.1);
+}
+
+.circle__blue {
+    position: absolute;
+    background: var(--color_blue);
+    width: var(--width_blue);
+    height: var(--height_blue);
+    left: var(--left_blue);
+    top: var(--top_blue);
+}
+
+.star {
+    --star_width : calc(var(--width_blue) + (var(--width_red) * 0.1));
+    --star_height : calc(var(--height_blue) + (var(--height_red) * 0.1));
+}
+
+.star {
+    position: absolute;
+    left: 5%;
+    top: -3%;
+    width: var(--star_width);
+    height: var(--star_height);
+}
+
+#star-five {
+    --right_left : calc(var(--star_width) * 0.41);
+    --bottom : calc(var(--star_width) * 0.29);
+    --bottom_before : calc(var(--star_width) * 0.33);
+    --left_right : calc(var(--star_width) * 0.125);
+    --left_edge_one : calc(var(--star_width) * 0.02);
+    --top_edge_one : calc(var(--star_width) * 0.3);
+    --left_edge_two : calc(var(--star_width) * 0.3 * -1);
+    --top_edge_two : calc(var(--star_width) * 0.2 * -1);
+    --left_edge_three : calc((var(--star_width) * -0.47));
+    --top_edge_three : calc(var(--star_width) * 0.04);
+}
+
+#star-five {
+    position: absolute;
+    color: var(--color_white);
+    width: 0px;
+    height: 0px;
+    left: var(--left_edge_one);
+    top: var(--top_edge_one);
+    border-right:  var(--right_left) solid transparent;
+    border-bottom: var(--bottom) solid var(--color_white);
+    border-left:   var(--right_left) solid transparent;
+    transform:   rotate(35deg);
+ }
+
+ #star-five:before {
+    border-bottom: var(--bottom_before) solid var(--color_white);
+    border-left: var(--left_right) solid transparent;
+    border-right: var(--left_right) solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: var(--top_edge_two);
+    left: var(--left_edge_two);
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+ }
+
+ #star-five:after {
+    position: absolute;
+    display: block;
+    color: var(--color_white);
+    top: var(--top_edge_three);
+    left: var(--left_edge_three);
+    width: 0px;
+    height: 0px;
+    border-right: var(--right_left) solid transparent;
+    border-bottom: var(--bottom) solid var(--color_white);
+    border-left: var(--right_left) solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+ }
+
+@media only screen and (max-width: 450px)  { 
+    :root {
+        --width_circle : 300px;
+        --height_circle : 300px;
+    }
+}
