@@ -34,6 +34,11 @@ Repositorio de la asigantura programación para no programadores.
 * Presentación: https://goo.gl/KPJwpK
 * Encuentro sincrónico: https://goo.gl/vZ7cXL
 
+### Séptimo encuentro: 06/03/2018
+
+* Presentación: https://goo.gl/55ADTe
+* Encuentro sincrónico: https://goo.gl/5QwpYt
+
 
 ### Autor
 * Jorge Rubaino [@ostjh]
